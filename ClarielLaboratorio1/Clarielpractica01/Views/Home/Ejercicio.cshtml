@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>NOTAS UNAB</h1>
+<form asp-controller="Home" asp-action="Ejercicio">
+   
+
+    <input type="text" placeholder="ingrese nombre" name="nombre"/>
+    <br />
+   <br />
+    
+   <input type="text" placeholder="lab1" name="DatoN1"/>
+
+    
+   <input type="text" placeholder="lab2" name="DatoN2"/>
+
+    
+   <input type="text" placeholder="lab3" name="DatoN3"/>
+
+  <br />
+   <br />
+   <input type="text" placeholder="parcial1" name="DatoN4"/>
+
+
+   <input type="text" placeholder="parcial2" name="DatoN5"/>
+
+
+   <input type="text" placeholder="parcial3" name="DatoN6"/>
+
+  <br />
+   <br />
+    
+     <button>Calcular Datos</button>
+     <br />
+   <br />
+
+    <label>ESTUDIANTE:      </label> <h4><label>@ViewBag.VariableNombre</label></h4> 
+     <label>NOTA FINAL:      </label><h4><label>@ViewBag.VariableAEnviar</label></h4> 
+</form>
